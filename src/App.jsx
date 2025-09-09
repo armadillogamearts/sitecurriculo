@@ -22,7 +22,7 @@ export default function App() {
       <header className="bg-white shadow-md p-6 text-center sticky top-0 z-50">
         <div className="flex flex-col items-center">
           <div className="w-32 h-32 rounded-full bg-gray-200 border-4 border-blue-800 mb-4 flex items-center justify-center overflow-hidden hover:scale-105 transition-transform">
-            <img src="/images/foto_joao_luis.jpeg" alt="Foto João Luís" className="object-cover w-full h-full" />
+            <img src="public/images/foto_joao_luis.jpeg" alt="Foto João Luís" className="object-cover w-full h-full" />
           </div>
           <h1 className="text-3xl font-bold">João Luís de Carvalho Corrêa</h1>
           <p className="text-sm mt-2">Aguaí - São Paulo | (19) 98409-5788 (WhatsApp)| armadillo.gamearts@gmail.com</p>
@@ -58,7 +58,7 @@ export default function App() {
             Tecnólogo em Jogos Digitais - Universidade São Judas Tadeu
             </p>
         </section>
-        
+
         {/*Idiomas*/}
         <section id="idiomas">
         <h2 className="text-2xl font-semibold text-blue-800 mb-4 border-b-2 border-blue-300 pb-2">Idiomas</h2>
