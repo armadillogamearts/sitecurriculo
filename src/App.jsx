@@ -12,7 +12,7 @@ export default function App() {
   const habilidades = [
     "C#", "Python", "Java", "JavaScript", "TypeScript",
     "HTML5", "CSS3", "React", "Node.js", "TailwindCSS",
-    "MySQL", "Firebase", "MongoDB", "Unity", "Modelagem 3D"
+    "MySQL", "Firebase", "AWS", "MongoDB", "Blender", "Photoshop", "Unity", "Modelagem 3D", "Animação"
   ];
 
   return (
@@ -22,10 +22,10 @@ export default function App() {
       <header className="bg-white shadow-md p-6 text-center sticky top-0 z-50">
         <div className="flex flex-col items-center">
           <div className="w-32 h-32 rounded-full bg-gray-200 border-4 border-blue-800 mb-4 flex items-center justify-center overflow-hidden hover:scale-105 transition-transform">
-            <img src="/images/sua-foto.jpg" alt="Foto João Luís" className="object-cover w-full h-full" />
+            <img src="/images/foto_joao_luis.jpeg" alt="Foto João Luís" className="object-cover w-full h-full" />
           </div>
           <h1 className="text-3xl font-bold">João Luís de Carvalho Corrêa</h1>
-          <p className="text-sm mt-2">Aguaí - São Paulo | (19) 98409-5788 | armadillo.gamearts@gmail.com</p>
+          <p className="text-sm mt-2">Aguaí - São Paulo | (19) 98409-5788 (WhatsApp)| armadillo.gamearts@gmail.com</p>
           <div className="flex justify-center gap-4 mt-4">
             <a href="https://www.linkedin.com/in/armadillo-game-arts/" target="_blank">
               <Button><Linkedin className="mr-2 h-4 w-4"/>LinkedIn</Button>
@@ -47,8 +47,32 @@ export default function App() {
         <section id="resumo">
           <h2 className="text-2xl font-semibold text-blue-800 mb-4 border-b-2 border-blue-300 pb-2">Resumo Profissional</h2>
           <p className="text-gray-700">
-            Desenvolvedor com experiência em <b>desenvolvimento web e jogos digitais</b>. Domínio em C#, Python, Java, JavaScript, HTML5, CSS3 e React. Experiência em integração de chatbots com IA e prototipagem de jogos.
+            Desenvolvedor FullStack com experiência em <b>desenvolvimento web e jogos digitais</b>. Domínio em C#, Python, Java, JavaScript, HTML5, CSS3 e React. Experiência em integração de chatbots com IA, prototipagem de jogos, criação e administração de banco de dados.
           </p>
+        </section>
+
+        {/*Formação*/}
+        <section id="formacao">
+          <h2 className="text-2xl font-semibold text-blue-800 mb-4 border-b-2 border-blue-300 pb-2">Formação</h2>
+          <p className="text-gray-700">
+            Tecnólogo em Jogos Digitais - Universidade São Judas Tadeu
+            </p>
+        </section>
+        
+        {/*Idiomas*/}
+        <section id="idiomas">
+        <h2 className="text-2xl font-semibold text-blue-800 mb-4 border-b-2 border-blue-300 pb-2">Idiomas</h2>
+        <p className="text-gray-700">
+          Português - Nativo
+        </p> 
+        <p className="text-gray-700">
+          Inglês - Intermediário (Técnico/Documentação)
+        </p>
+        <p className="text-gray-700">
+          Espanhol - Intermediário (Técnico/Documentação)
+        </p>
+          
+
         </section>
 
         {/* Habilidades */}
@@ -85,9 +109,28 @@ export default function App() {
           </button>
           {showCerts && (
             <ul className="list-disc ml-5 space-y-2 text-gray-700">
-              <li><a href="/certificados/certificado1.pdf" target="_blank" className="text-blue-600 hover:underline">Certificado 1</a></li>
-              <li><a href="/certificados/certificado2.pdf" target="_blank" className="text-blue-600 hover:underline">Certificado 2</a></li>
-              <li><a href="/certificados/certificado3.pdf" target="_blank" className="text-blue-600 hover:underline">Certificado 3</a></li>
+              <li><a href="/certificados/INTRODUCAO A PROGRAMACAO.pdf" target="_blank" className="text-blue-600 hover:underline">Introdução a Programação( USJT)</a></li>
+              <li><a href="/certificados/progjogosmult.pdf" target="_blank" className="text-blue-600 hover:underline">Programação de Jogos Multiplataforma e Engines (USJT)</a></li>
+              <li><a href="/certificados/inteligenciaartificial.pdf" target="_blank" className="text-blue-600 hover:underline">Inteligência Artificial (USJT)</a></li>
+              <li><a href="/certificados/gamedesign.pdf" target="_blank" className="text-blue-600 hover:underline">Game Design (USJT)</a></li>
+              <li><a href="/certificados/criacaoaudiovisual.pdf" target="_blank" className="text-blue-600 hover:underline">Criação em Audio Visual (USJT)</a></li>
+              <li><a href="/certificados/cg_rv.pdf" target="_blank" className="text-blue-600 hover:underline">Computação Gráfica e Realidade Virtual (USJT)</a></li>
+              <li><a href="/certificados/usabilidade.pdf" target="_blank" className="text-blue-600 hover:underline">Usabilidade, Desenvolvimento Web, Mobile e Jogos (USJT)</a></li>
+              <li><a href="/certificados/animacao.pdf" target="_blank" className="text-blue-600 hover:underline">Animação (USJT)</a></li>
+              <li><a href="/certificados/extensaoIA.pdf" target="_blank" className="text-blue-600 hover:underline">Extensão Universitária - Inteligência Artificial 180h (FAMEESP)</a></li>
+              <li><a href="/certificados/Jogos para dispositivos moveis.pdf" target="_blank" className="text-blue-600 hover:underline">Jogos para Dispositivos Móveis (Universidade Cruzeiro do Sul)</a></li>
+              <li><a href="/certificados/LOGICA DE PROGRAMACAO SENAI.pdf" target="_blank" className="text-blue-600 hover:underline">Lógica de Programação (SENAI)</a></li>
+              <li><a href="/certificados/Lógica_de_Programação1.pdf" target="_blank" className="text-blue-600 hover:underline">Lógica de Programação 1 (IFRS)</a></li>
+              <li><a href="/certificados/Lógica_de_Programação2.pdf" target="_blank" className="text-blue-600 hover:underline">Lógica de Programação 2 (IFRS)</a></li>
+              <li><a href="/certificados/Lógica_de_Programação3.pdf" target="_blank" className="text-blue-600 hover:underline">Lógica de Programação 3 (IFRS)</a></li>
+              <li><a href="/certificados/Programação_Básica_com_Java1.pdf" target="_blank" className="text-blue-600 hover:underline">Programação Básica com Java 1 (IFRS)</a></li>
+              <li><a href="/certificados/Programação_Básica_com_Java2.pdf" target="_blank" className="text-blue-600 hover:underline">Programação Básica com Java 2 (IFRS)</a></li>
+              <li><a href="/certificados/Programação_Básica_com_Java3.pdf" target="_blank" className="text-blue-600 hover:underline">Programação Básica com Java 3 (IFRS)</a></li>
+              <li><a href="/certificados/Inkscape-Certificado_digital.pdf" target="_blank" className="text-blue-600 hover:underline">InkScape (IFRS)</a></li>
+              <li><a href="/certificados/PROGRAMACAODOZERO.pdf" target="_blank" className="text-blue-600 hover:underline">Programação do Zero - C# (Udemy)</a></li>
+              <li><a href="/certificados/PROGRAMACAOPYTHONDOZERO.pdf" target="_blank" className="text-blue-600 hover:underline">Programação Python do Zero ao Avançado (Udemy)</a></li>
+              <li><a href="/certificados/DesignDeJogos2DComArteVetorialInkscape.pdf" target="_blank" className="text-blue-600 hover:underline">Design de Jogos 2D com Arte Vetorial (Udemy)</a></li>
+              <li><a href="/certificados/CERTIFICADO CALARTSINTRO.pdf" target="_blank" className="text-blue-600 hover:underline">Introduction to Game Design (California Institute of the Arts)</a></li>
             </ul>
           )}
         </section>
