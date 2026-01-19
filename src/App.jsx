@@ -11,8 +11,8 @@ export default function App() {
 
   const habilidades = [
     "C#", "Python", "Java", "JavaScript", "TypeScript",
-    "HTML5", "CSS3", "React", "Node.js", "TailwindCSS",
-    "MySQL", "Firebase", "AWS", "MongoDB", "Blender", "Photoshop", "Unity", "Modelagem 3D", "Animação"
+    "HTML5", "CSS3", "React", "Node.js", "TailwindCSS","Next.js", "Ionic","SQL",
+    "MySQL", "Firebase", "AWS", "MongoDB", "Blender","Zbrush","InkScape", "Photoshop", "Unity", "Pixel Art","Arte Vetorial","Escultura Digital","Modelagem 3D", "Animação"
   ];
 
   return (
@@ -25,7 +25,7 @@ export default function App() {
             <img src="./images/foto_joao_luis.jpeg" alt="Foto João Luís" className="object-cover w-full h-full" />
           </div>
           <h1 className="text-3xl font-bold">João Luís de Carvalho Corrêa</h1>
-          <p className="text-sm mt-2">Aguaí - São Paulo | (19) 98409-5788 (WhatsApp)| armadillo.gamearts@gmail.com</p>
+          <p className="text-sm mt-2">Sumaré(Matão)/Aguaí - São Paulo | <a href="https://wa.me/5519984095788" target="_blank">(19) 98409-5788 (WhatsApp)</a></p>
           <div className="flex justify-center gap-4 mt-4">
             <a href="https://www.linkedin.com/in/armadillo-game-arts/" target="_blank">
               <Button><Linkedin className="mr-2 h-4 w-4"/>LinkedIn</Button>
@@ -57,6 +57,9 @@ export default function App() {
           <p className="text-gray-700">
             Tecnólogo em Jogos Digitais - Universidade São Judas Tadeu
             </p>
+            <p className="text-gray-700">
+            Especialização/Extensão em Inteligência Artificial - FAMEESP
+            </p>
         </section>
 
         {/*Idiomas*/}
@@ -87,7 +90,7 @@ export default function App() {
         <section id="experiencia">
           <h2 className="text-2xl font-semibold text-blue-800 mb-4 border-b-2 border-blue-300 pb-2">Experiência</h2>
           <div className="grid gap-6 md:grid-cols-2">
-            <Card><CardContent><h3 className="font-semibold">Desenvolvedor Web – Projetos Pessoais</h3><p className="text-sm mt-1 text-gray-600">2024 – Atual</p><ul className="list-disc ml-5 mt-2 text-gray-700 text-sm"><li>Aplicações web com React, Node.js e TailwindCSS.</li><li>Chatbots integrados ao WhatsApp e Firebase.</li><li>APIs de IA (Gemini, GPT) em projetos práticos.</li></ul></CardContent></Card>
+            <Card><CardContent><h3 className="font-semibold">Desenvolvedor Web – Projetos Pessoais</h3><p className="text-sm mt-1 text-gray-600">2024 – Atual</p><ul className="list-disc ml-5 mt-2 text-gray-700 text-sm"><li>Aplicações web com React, Node.js, Ionic, Next.js e TailwindCSS.</li><li>Chatbots integrados ao WhatsApp e Firebase.</li><li>APIs de IA (Gemini, GPT) em projetos práticos.</li></ul></CardContent></Card>
             <Card><CardContent><h3 className="font-semibold">Artista 3D – Armadillo Game Arts</h3><p className="text-sm mt-1 text-gray-600">2018 – Atual</p><ul className="list-disc ml-5 mt-2 text-gray-700 text-sm"><li>Modelagem, escultura digital e animação para jogos e impressão 3D.</li><li>Criação de assets otimizados para engines.</li></ul></CardContent></Card>
           </div>
         </section>
